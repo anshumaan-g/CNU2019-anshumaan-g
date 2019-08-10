@@ -89,7 +89,7 @@ DATABASES = {
         # user name.
         'USER': 'paji',
         # password
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
+        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
         # connect options
         'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",},
     }
